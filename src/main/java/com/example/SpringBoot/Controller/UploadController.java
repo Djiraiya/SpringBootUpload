@@ -38,7 +38,6 @@ public class UploadController {
         uploadModel.setImages(encodedImagesList);
 
         String url = "";
-
         CloseableHttpClient client = HttpClients.createDefault();
         HttpPost httpPost = new HttpPost(url);
 

@@ -12,6 +12,7 @@ import java.util.List;
 public class UploadService {
 
     public List<String> encodedImages(MultipartFile[] files) throws IOException {
+
         List<String> imagesList = new ArrayList<>();
         for (MultipartFile file : files) {
             if (file != null && !file.getOriginalFilename().isEmpty()) {

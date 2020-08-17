@@ -3,6 +3,7 @@ package com.example.SpringBoot.Model;
 import java.util.List;
 
 public class UploadModel {
+
     private String content;
     private List<String> images;
 
