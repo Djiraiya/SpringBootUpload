@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Upload Files</title>
+</head>
+<body>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <div align="center">
+        <div>
+            <input type="text" id="content" name="content">
+        </div>
+        <div>
+            <input type="file" name="files">
+        </div>
+        <div>
+            <input type="file" name="files">
+        </div>
+        <div>
+            <input type="file" name="files">
+        </div>
+        <div>
+            <input type="file" name="files">
+        </div>
+        <div>
+            <input type="file" name="files">
+        </div>
+        <div>
+            <input type="file" name="files">
+        </div>
+        <div>
+            <input type="file" name="files">
+        </div>
+        <div>
+            <input type="file" name="files">
+        </div>
+        <div>
+            <input type="file" name="files">
+        </div>
+        <div>
+            <input type="file" name="files">
+        </div>
+    <input type="submit" value="Загрузить файлы"></input>
+    </div>
+</form>
+
+<div th:if="${uploadModel}">
+    <h3>
+        List of encodedImages
+    </h3>
+    <p th:text="'content: ' + ${uploadModel.content}" />
+    <p th:text="'encoded images: ' + ${uploadModel.images}" />
+</div>
+
+</body>
+</html>
